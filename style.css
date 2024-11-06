@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tinos", serif;
+}
+
+nav{
+    background:linear-gradient(90deg, #fef5f1 70%, #fff 30%)
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genLayout{
+    max-width: 900px;
+    margin: auto;
+    padding-block: 1rem;
+}
+
+.navRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navLinks{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.navLinks a:nth-child(1){
+    color: rgba(238, 85, 20, 1);
+}
+
+.nav button{
+    padding-block: 15px;
+    padding-inline: 40px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgba(238, 85, 20, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner{
+    background:linear-gradient(90deg, #fef5f1 70%, #fff 30%)
+}
+
+.bannerContainer{
+    padding-block: 3rem;
+    display: flex;
+    gap: 13.5rem;
+    align-items: center;
+}
+
+.bannerInfo{
+    margin-top: 80px;
+}
+
+.bannerInfo h1{
+    font-size: 29px;
+    width: 170px;
+    font-weight: 540;
+}
+.bannerInfo h1 span{
+    color:rgba(238, 85, 20, 1);
+}
+
+.bannerInfo p{
+    width: 350px;
+    padding-block: .7rem;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.priceInfo{
+    height: 90px;
+    width: 700px;
+    background-color: #fff;
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    border: 2px solid whitesmoke;
+}
+
+.box{
+    border: 1px solid orange;
+    height: 40px;
+    max-width: 140px;
+    display: block;
+    padding-inline: 27px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.box p{
+    margin-top: -30px;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.box select{
+    text-transform: capitalize;
+    font-weight: 550;
+    outline: none;
+    border: none;
+}
+
+
+
+
+.priceInfo .box:nth-child(1){
+    border-left: none;
+}
+
+.priceInfo .box:nth-child(4){
+    border-right: none;
+}
+
+
+
+
+
+.priceInfo button{
+    padding-block: 15px;
+    padding-inline: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgba(238, 85, 20, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bannerImg{
+    border: 4px solid orange;
+    height: 250px;
+    width: 200px;
+    position: relative;
+}
+
+.bannerImg img{
+    height: 250px;
+    width: 190px;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    left: -350px;
+}
+
+.dotContainer{
+    display: block;
+    margin-top: 110px;    
+}
+
+.dotContainer .dot:nth-child(3){
+    height: 20px;
+    width: 20px;
+    background-color: orangered;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: 4;
+}
+
+
+.videoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.videoText span{
+    display: flex;
+    color: orange;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.videoText span{
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+}
+
+.videoText h1{
+    font-size: 26px;
+    width: 200px;
+    padding-block: .6rem;
+}
+
+
+
+.videoText p{
+    width: 300px;
+}
+
+.videoImages{
+    height: 200px;
+    width: 330px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.videoImages img{
+    height: 200px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.vImage{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    border-radius: 8px;
+    
+}
+
+.vImage img{
+    height: 200px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.play{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    background-color: #fff;
+    color: orangered;
+}
+
+.fa-solid{
+    font-size: 22px;
+}
+
+.pumaCard{
+      text-align: center;
+      padding-block: 4rem;
+}
+
+.pumaCard span{
+    display: block;
+    font-size: 17px;
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.cardContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding-block: 2rem;
+}
+
+
+
+.boxx{
+    border: 2px solid whitesmoke;
+    height: 350px;
+    width: 300px;
+    background-color: #ffff;
+}
+
+.boxx h1{
+    padding-block: .8rem;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.boxx p{
+    font-size: 14px;
+    width: 230px;
+    margin: auto;
+}
+
+.cardContainer .boxx:nth-child(2){
+    background-color: #fef5f1 ;
+    border: none;
+}
+
+
+
+.cardImage{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.cardImage img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.boxxInfo{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.boxxInfo p{
+     font-size: 15px;
+     text-transform: capitalize;
+     color: orange;
+}
+
+
+.fa-chevron-right{
+    font-size: 10px;
+    color: #000;
+}
+
+.fa-chevron-left{
+    font-size: 10px;
+}
+
+.galleryContainer h1{
+    font-size: 33px;
+    text-transform: uppercase;
+}
+
+.galleryContainer span{
+    color: orange;
+    display: block;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.galleryInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galleryRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.galleryRight h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.galleryLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.galleryLinks a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+}
+
+.galleryLinks a:nth-child(2){
+    color: orangered;
+}
+
+.galleryIcons{
+    display: flex;
+    gap: 20px;
+}
+
+.galleryIcons span{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fef5f1
+}
+
+.galleryIcons span:nth-child(1){
+      opacity: 1;
+}
+
+.galleryShop{
+       display: flex;
+       gap: 20px;
+       padding-block: 1.5rem;
+}
+
+.boxs{
+    border: 2px solid whitesmoke;
+    height: 150px;
+    width: 210px;
+}
+
+.boxs img{
+    height: 150px;
+    width: 210px;
+}
+
+.galleryBox h1{
+    font-size: 14px;
+    padding-block: .8rem;
+}
+
+.galleryBox button{
+    padding-block: 15px;
+    padding-inline: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgba(238, 85, 20, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: .6rem;
+}
+
+.testimonialInfo{
+    display: flex;
+    gap: 5rem;
+    margin-top: 50px;
+}
+
+.testimonialContainer h1{
+     text-align: center;
+     text-transform: capitalize;
+     font-size: 30px;
+}
+
+.testimonialImage{
+    border-radius: 10px;
+    height: 230px;
+    width: 400px;
+}
+
+.testimonialImage img{
+    height: 230px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.imgHolder{
+    display: flex;
+    justify-content: space-between;
+    gap:14rem;
+}
+
+.imgHolder img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+}
+
+.icons span{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fef5f1
+}
+
+.testInfo h2{
+    font-size: 19px;
+    padding-block: .5rem;
+}
+
+.testInfo p{
+    width: 350px;
+}
+.pumaImage{
+    height: 250px;
+    width: 350px;
+    background-color: rgba(126, 166, 215, 1);
+    border-radius: 10px;
+}
+
+.pumaImage img{
+    height: 250px;
+    width: 350px;
+}
+
+.newsLetter{
+    display: flex;
+    padding-block: 3rem;
+}
+
+.news{
+    height: 250px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgba(242, 246, 251, 1);
+    padding: 40px;
+}
+
+.news h1{
+    font-size: 22px;
+    padding-block: .4rem;
+}
+
+.news p{
+    padding-block: .8rem;
+}
+
+.placeholder{
+    margin-top: 30px;
+}
+
+.placeholder input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.placeholder input::placeholder{
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.placeholder button{
+    padding-block: 13px;
+    padding-inline: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgba(238, 85, 20, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
