@@ -593,3 +593,15 @@ nav{
     cursor: pointer;
     font-size: 14px;
 }
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: cornsilk;
+    border-top: 5px solid orangered;
+    margin-top: 20px;
+  }
+  footer p {
+    color: black;
+  }
