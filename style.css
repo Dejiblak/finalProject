@@ -607,10 +607,11 @@ footer {
   }
 
 
- /*  Responsiveness */
-@media screen and (max-width: 390px) {
+ /* Global Styles - No Changes Needed */
 
-    
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
+    /* Tablet devices */
     * {
         font-size: 14px;
         box-sizing: border-box;
@@ -620,7 +621,6 @@ footer {
         padding: 1rem;
     }
 
-    
     nav {
         padding: 0.5rem;
     }
@@ -868,6 +868,514 @@ footer {
 
     footer p {
         font-size: 12px;
+        color: #000;
+    }
+}
+
+/* For mobile devices below 768px */
+@media screen and (max-width: 768px) {
+    /* Mobile */
+    * {
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .genLayout {
+        padding: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .navLinks a {
+        font-size: 14px;
+    }
+
+    .nav button {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Banner */
+    .bannerContainer {
+        flex-direction: column;
+        gap: 2rem;
+        padding-block: 2rem;
+        text-align: center;
+    }
+
+    .bannerInfo h1 {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .bannerInfo p {
+        width: 90%;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+
+    .priceInfo {
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        margin-top: 2rem;
+    }
+
+    .box {
+        width: 100%;
+        margin: 5px 0;
+        padding-inline: 20px;
+    }
+
+    .box select {
+        width: 100%;
+    }
+
+    .bannerImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .images {
+        gap: 10px;
+        justify-content: center;
+        left: 0;
+    }
+
+    .dotContainer {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 10px;
+        background-color: orange;
+    }
+
+    .videoContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .videoText h1 {
+        font-size: 22px;
+    }
+
+    .videoImages {
+        width: 100%;
+        height: auto;
+    }
+
+    .vImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .play {
+        top: 35px;
+        left: 45%;
+    }
+
+    /* Puma Card Section */
+    .cardContainer {
+        flex-direction: column;
+        gap: 1rem;
+        padding-block: 1rem;
+    }
+
+    .boxx {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .cardImage {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Gallery Section */
+    .galleryContainer h1 {
+        font-size: 20px;
+    }
+
+    .galleryInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .galleryLinks {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .galleryIcons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .galleryShop {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .boxs {
+        width: 100%;
+        height: auto;
+    }
+
+    .galleryBox h1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .galleryBox button {
+        padding: 10px 25px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    /* Testimonial Section */
+    .testimonialContainer h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .testimonialImage {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .imgHolder {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .testInfo p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .pumaImage {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Newsletter Section */
+    .news {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .news h1 {
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+
+    .news p {
+        padding-bottom: 1rem;
+    }
+
+    .placeholder input {
+        width: 80%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .placeholder button {
+        padding-block: 10px;
+        padding-inline: 25px;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer p {
+        font-size: 12px;
+        color: #000;
+    }
+}
+
+/* For small mobile devices (below 480px) */
+@media screen and (max-width: 480px) {
+    /* Small Mobile */
+    * {
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+
+    .genLayout {
+        padding: 0.5rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .navLinks a {
+        font-size: 12px;
+    }
+
+    .nav button {
+        padding: 8px 18px;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Banner */
+    .bannerContainer {
+        flex-direction: column;
+        gap: 2rem;
+        padding-block: 2rem;
+        text-align: center;
+    }
+
+    .bannerInfo h1 {
+        font-size: 18px;
+        width: auto;
+    }
+
+    .bannerInfo p {
+        width: 90%;
+        font-size: 12px;
+        margin: 0 auto;
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+
+    .priceInfo {
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        margin-top: 2rem;
+    }
+
+    .box {
+        width: 100%;
+        margin: 5px 0;
+        padding-inline: 20px;
+    }
+
+    .box select {
+        width: 100%;
+    }
+
+    .bannerImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .images {
+        gap: 10px;
+        justify-content: center;
+        left: 0;
+    }
+
+    .dotContainer {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 10px;
+        background-color: orange;
+    }
+
+    .videoContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .videoText h1 {
+        font-size: 20px;
+    }
+
+    .videoImages {
+        width: 100%;
+        height: auto;
+    }
+
+    .vImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .play {
+        top: 35px;
+        left: 45%;
+    }
+
+    /* Puma Card Section */
+    .cardContainer {
+        flex-direction: column;
+        gap: 1rem;
+        padding-block: 1rem;
+    }
+
+    .boxx {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .cardImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Gallery Section */
+    .galleryContainer h1 {
+        font-size: 18px;
+    }
+
+    .galleryInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .galleryLinks {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .galleryIcons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .galleryShop {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .boxs {
+        width: 100%;
+        height: auto;
+    }
+
+    .galleryBox h1 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .galleryBox button {
+        padding: 8px 20px;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    /* Testimonial Section */
+    .testimonialContainer h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .testimonialImage {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .imgHolder {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .testInfo p {
+        width: 90%;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .pumaImage {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Newsletter Section */
+    .news {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .news h1 {
+        font-size: 16px;
+        padding-bottom: 1rem;
+    }
+
+    .news p {
+        padding-bottom: 1rem;
+    }
+
+    .placeholder input {
+        width: 80%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .placeholder button {
+        padding-block: 8px;
+        padding-inline: 20px;
+        font-size: 10px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer p {
+        font-size: 10px;
         color: #000;
     }
 }
